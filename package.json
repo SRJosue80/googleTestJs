@@ -1,0 +1,21 @@
+{
+  "name": "googletest",
+  "version": "1.0.0",
+  "description": "Pruebas de automatizacion google",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "comenzando"
+  ],
+  "author": "JS",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.1",
+    "cypress": "^8.7.0"
+  }
+}
