@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import '@testing-library/cypress/add-commands';
+
+Cypress.Commands.add(('search'),(value)=>{
+    cy.fixture('index').then((index)=>{
+        cy.get(index.searchBox).type(value);
+    })
+})
+
+Cypress.Commands.add(('lnk'),()=>{
+    cy.fixture('index').then((index)=>{
+        cy.get(index.firstLink).first().click();;
+    })
+})
